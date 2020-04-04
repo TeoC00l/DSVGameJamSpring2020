@@ -8,10 +8,16 @@ public class Vision : MonoBehaviour
     private bool seeingOlle;
     [SerializeField]private Olle olle;
     public LayerMask visionMask;
+    CanvasGroup staticEffect;
+    public Vector3 enemyDirection;
 
     // Start is called before the first frame update
     void Start()
     {
+
+
+        staticEffect = GameObject.Find("StaticEffect").GetComponent<CanvasGroup>();
+
         deathHandler = GetComponentInParent<DeathHandler>();
     }
 
@@ -19,12 +25,21 @@ public class Vision : MonoBehaviour
     void Update()
     {
 
+
+        if (deathHandler == null)
+        {
+            deathHandler = GetComponentInParent<DeathHandler>();
+        }
+
+
         if (seeingOlle){
+            staticEffect.alpha = 0.2f;
             Debug.Log("Scare!");
             deathHandler.scare();
         }
         else
         {
+            staticEffect.alpha = 0;
             Debug.Log("Calm!");
             deathHandler.calm();
 
@@ -63,10 +78,10 @@ public class Vision : MonoBehaviour
     {
         RaycastHit hit;
 
-        Vector3 direction = olle.transform.position - gameObject.transform.parent.position;
-        Physics.Raycast(transform.parent.position, direction.normalized, out hit, Mathf.Infinity, visionMask);
+        enemyDirection = olle.transform.position - gameObject.transform.parent.position;
+        Physics.Raycast(transform.parent.position, enemyDirection.normalized, out hit, Mathf.Infinity, visionMask);
 
-        Debug.DrawRay(transform.parent.position, direction, Color.red);
+        Debug.DrawRay(transform.parent.position, enemyDirection, Color.red);
 
         if(hit.collider.gameObject.tag == "Enemy")
         {
