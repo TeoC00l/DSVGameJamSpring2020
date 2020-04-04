@@ -21,6 +21,7 @@ public class Olle : MonoBehaviour
     {
         if (pursuing)
         {
+            navMeshAgent.isStopped = false;
             navMeshAgent.SetDestination(player.transform.position);
         }
         else
