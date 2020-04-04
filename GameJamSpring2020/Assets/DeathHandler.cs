@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DeathHandler : MonoBehaviour
 {
+    GameObject DeathScreen;
     private int fearCounter;
     private int fearThreshold = 1000;
     
@@ -11,6 +12,8 @@ public class DeathHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DeathScreen = GameObject.Find("DeathScreen");
+        DeathScreen.SetActive(false);
         fearCounter = 0;
     }
 
@@ -19,6 +22,7 @@ public class DeathHandler : MonoBehaviour
     {
         if (fearCounter > fearThreshold)
         {
+            die();
         }
         
     }
@@ -34,5 +38,10 @@ public class DeathHandler : MonoBehaviour
         {
             fearCounter--;
         }
+    }
+
+    public void die()
+    {
+        DeathScreen.SetActive(true);
     }
 }
