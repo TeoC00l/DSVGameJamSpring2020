@@ -55,7 +55,7 @@ public class FlashLight : MonoBehaviour
 
             }
         }
-        else
+        else if(battery >= 100)
         {
             battery += batteryRecharge * Time.deltaTime;
             Debug.Log("battery" + battery);
