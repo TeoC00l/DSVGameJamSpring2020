@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] Clips;
-    public AudioSource MusicSource, FXSource;
+    public AudioSource MusicSource, FXSource, StaticSource;
     public static AudioManager instance;
 
     void Start()

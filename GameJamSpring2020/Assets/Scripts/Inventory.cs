@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour
         instance = this;
         TotalRollsText.text = "/ " + noOfCollectibles;
         CurrentRollsText.text = CollectedRolls.ToString();
+        AudioManager.instance.StaticSource.Play();
     }
 
     // Update is called once per frame
@@ -47,6 +48,7 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("MainMenu");
+            AudioManager.instance.StaticSource.Stop();
         }
     }
 

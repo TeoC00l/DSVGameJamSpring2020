@@ -24,7 +24,7 @@ public class Vision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        PlayStaticSound();
 
         if (deathHandler == null)
         {
@@ -145,6 +145,17 @@ public class Vision : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    private void PlayStaticSound()
+    {
+        if (seeingOlle && !AudioManager.instance.StaticSource.isPlaying)
+        {
+            AudioManager.instance.StaticSource.Play();
+        } else if(!seeingOlle && AudioManager.instance.StaticSource.isPlaying)
+        {
+            AudioManager.instance.StaticSource.Stop();
         }
     }
 }
