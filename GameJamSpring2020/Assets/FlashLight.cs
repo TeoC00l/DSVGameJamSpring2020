@@ -8,8 +8,8 @@ public class FlashLight : MonoBehaviour
     public float battery = 100;
     private Light flashLight;
     private bool active = false;
-    private float batteryDrain = 5;
-    private float batteryRecharge = 2.5f;
+    private float batteryDrain = 7.5f;
+    private float batteryRecharge = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +55,7 @@ public class FlashLight : MonoBehaviour
 
             }
         }
-        else if(battery >= 100)
+        else if(!active && battery <= 100)
         {
             battery += batteryRecharge * Time.deltaTime;
             Debug.Log("battery" + battery);
