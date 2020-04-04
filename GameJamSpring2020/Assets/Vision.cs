@@ -19,12 +19,10 @@ public class Vision : MonoBehaviour
     {
         if (seeingOlle){
             deathHandler.scare();
-            Debug.Log("Olle seen");
         }
         else
         {
             deathHandler.calm();
-            Debug.Log("No olle");
 
         }
     }
