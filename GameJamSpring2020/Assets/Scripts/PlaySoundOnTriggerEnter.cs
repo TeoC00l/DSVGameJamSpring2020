@@ -14,7 +14,7 @@ public class PlaySoundOnTriggerEnter: MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !source.isPlaying)
         {
             source.PlayOneShot(source.clip);
         }

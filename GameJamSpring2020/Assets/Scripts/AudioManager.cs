@@ -21,19 +21,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    void PlayClip(AudioClip clip, bool looping)
+    public void PlayClip(AudioClip clip, bool looping)
     {
         FXSource.PlayOneShot(clip);
         FXSource.loop = looping;
     }
 
-    void PlayMusic(AudioClip clip)
+   public void PlayMusic(AudioClip clip)
     {
         MusicSource.PlayOneShot(clip);
     }

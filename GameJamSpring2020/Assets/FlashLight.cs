@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {
-
+    [SerializeField] private AudioClip sound;
     public float battery = 200;
     private Light flashLight;
     private bool active = false;
+    private float batteryDrain = 10;
+    private float batteryRecharge = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +29,14 @@ public class FlashLight : MonoBehaviour
                 {
                     active = true;
                     flashLight.enabled = true;
-
+                    AudioManager.instance.PlayClip(sound, false);
                 }
                 else
                 {
                     active = false;
                     flashLight.enabled = false;
+                    AudioManager.instance.PlayClip(sound, false);
+
                 }
             }
         }
@@ -39,7 +44,7 @@ public class FlashLight : MonoBehaviour
 
         if (active)
         {
-            battery -= 10 * Time.deltaTime;
+            battery -= batteryDrain * Time.deltaTime;
             Debug.Log(battery);
             if (battery <= 0)
             {
@@ -49,6 +54,12 @@ public class FlashLight : MonoBehaviour
                 Debug.Log("no battery");
 
             }
+        }
+        else
+        {
+            battery += batteryRecharge * Time.deltaTime;
+            Debug.Log("battery" + battery);
+
         }
 
     }
