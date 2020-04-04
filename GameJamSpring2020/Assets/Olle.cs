@@ -49,7 +49,7 @@ public class Olle : MonoBehaviour
         }
         else if (distance > 2f)
         {
-            navMeshAgent.speed = 4f;
+            navMeshAgent.speed = 8f;
 
         }
 

@@ -45,21 +45,25 @@ public class DeathHandler : MonoBehaviour
     {
             if (distance > 20f)
             {
-                fearCounter += 1;
+                fearCounter += 2;
             }
             else if (distance > 10f)
             {
-                fearCounter += 2;
+                fearCounter += 4;
             }
             else if (distance > 5f)
             {
-                fearCounter += 4;
+                fearCounter += 8;
             }
-            else if (distance > 2f)
+            else if (distance > 3f)
             {
                 fearCounter += 10;
             }
-    }
+            else
+            {
+            fearCounter += 20;
+            }
+    }   
 
     public void calm()
     {
