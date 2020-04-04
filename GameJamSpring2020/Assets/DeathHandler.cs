@@ -41,23 +41,23 @@ public class DeathHandler : MonoBehaviour
 
     public void scare(float distance)
     {
-            if (distance > 40f)
+        Debug.Log(distance);
+            if (distance > 20f)
             {
                 fearCounter += 1;
             }
-            else if (distance > 30f)
+            else if (distance > 10f)
             {
                 fearCounter += 2;
             }
-            else if (distance > 20f)
+            else if (distance > 5f)
             {
                 fearCounter += 4;
             }
-            else
+            else if (distance > 2f)
             {
                 fearCounter += 10;
             }
-
     }
 
     public void calm()
