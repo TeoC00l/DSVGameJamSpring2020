@@ -33,6 +33,26 @@ public class Olle : MonoBehaviour
 
     private void Update()
     {
+        float distance = Vector3.Distance(gameObject.transform.position, player.transform.position);
+
+        if (distance > 20f)
+        {
+            navMeshAgent.speed = 2f;
+        }
+        else if (distance > 10f)
+        {
+            navMeshAgent.speed = 2.5f;
+        }
+        else if (distance > 5f)
+        {
+            navMeshAgent.speed = 3f;
+        }
+        else if (distance > 2f)
+        {
+            navMeshAgent.speed = 4f;
+
+        }
+
         if (player.GetComponentInChildren<Vision>().isSeeingOlle())
         {
             pursuing = false;

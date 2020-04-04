@@ -51,7 +51,6 @@ public class Vision : MonoBehaviour
                 staticEffect.alpha = 0.05f;
             }
 
-
             staticEffect.alpha = 0.05f;
             Debug.Log("Scare!");
             deathHandler.scare(distance);
