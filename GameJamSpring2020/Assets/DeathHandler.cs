@@ -19,7 +19,6 @@ public class DeathHandler : MonoBehaviour
     {
         if (fearCounter > fearThreshold)
         {
-            Debug.Log("u are dead");
         }
         
     }

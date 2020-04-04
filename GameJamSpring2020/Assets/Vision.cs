@@ -7,6 +7,7 @@ public class Vision : MonoBehaviour
     DeathHandler deathHandler;
     private bool seeingOlle;
     [SerializeField]private Olle olle;
+    public LayerMask visionMask;
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +18,14 @@ public class Vision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (seeingOlle){
+            Debug.Log("Scare!");
             deathHandler.scare();
         }
         else
         {
+            Debug.Log("Calm!");
             deathHandler.calm();
 
         }
@@ -31,7 +35,14 @@ public class Vision : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            seeingOlle = true;
+            if (ScanForOlle())
+            {
+                seeingOlle = true;
+            }
+            else
+            {
+                seeingOlle = false;
+            }
         }
     }
 
@@ -48,4 +59,22 @@ public class Vision : MonoBehaviour
         return seeingOlle;
     }
 
+    private bool ScanForOlle()
+    {
+        RaycastHit hit;
+
+        Vector3 direction = olle.transform.position - gameObject.transform.parent.position;
+        Physics.Raycast(transform.parent.position, direction.normalized, out hit, Mathf.Infinity, visionMask);
+
+        Debug.DrawRay(transform.parent.position, direction, Color.red);
+
+        if(hit.collider.gameObject.tag == "Enemy")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
