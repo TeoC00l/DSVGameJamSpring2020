@@ -33,7 +33,7 @@ public class Vision : MonoBehaviour
 
 
         if (seeingOlle){
-            staticEffect.alpha = 0.2f;
+            staticEffect.alpha = 0.05f;
             Debug.Log("Scare!");
             deathHandler.scare();
         }
