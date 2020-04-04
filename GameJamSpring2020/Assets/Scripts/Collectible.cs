@@ -15,6 +15,7 @@ public class Collectible : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Inventory.instance.CollectedRolls++;
+            Inventory.instance.UpdateRolls();
             Destroy(gameObject);
         }
     }
