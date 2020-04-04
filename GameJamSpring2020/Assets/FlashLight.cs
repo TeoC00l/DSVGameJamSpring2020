@@ -5,11 +5,11 @@ using UnityEngine;
 public class FlashLight : MonoBehaviour
 {
     [SerializeField] private AudioClip sound;
-    public float battery = 200;
+    public float battery = 100;
     private Light flashLight;
     private bool active = false;
-    private float batteryDrain = 10;
-    private float batteryRecharge = 5;
+    private float batteryDrain = 5;
+    private float batteryRecharge = 2.5f;
 
     // Start is called before the first frame update
     void Start()
