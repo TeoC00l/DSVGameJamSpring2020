@@ -327,7 +327,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.01
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -605,6 +605,7 @@ MonoBehaviour:
   WinScreen: {fileID: 0}
   DeathScreen: {fileID: 0}
   InGameUI: {fileID: 0}
+  BatterySlider: {fileID: 0}
 --- !u!1 &8204158684839759225
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53.799988, y: -88.09999}
+  m_AnchoredPosition: {x: 53.80005, y: -88.099976}
   m_SizeDelta: {x: 77.01999, y: 87.649994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6338631429779779807
@@ -789,7 +790,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6958441809302453134}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
