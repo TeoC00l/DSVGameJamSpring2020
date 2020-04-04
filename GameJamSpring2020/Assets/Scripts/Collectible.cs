@@ -10,7 +10,8 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            AudioManager.instance.PlayClip(PickupClip, false);
+            Debug.Log("Picking up toilet roll");
+            AudioManager.instance.PlayClip(PickupClip, false, 0.1f);
             Inventory.instance.CollectedRolls++;
             Inventory.instance.UpdateRolls();
             Destroy(gameObject);

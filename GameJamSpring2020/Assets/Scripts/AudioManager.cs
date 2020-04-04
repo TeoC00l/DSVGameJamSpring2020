@@ -22,8 +22,9 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public void PlayClip(AudioClip clip, bool looping)
+    public void PlayClip(AudioClip clip, bool looping, float volume)
     {
+        FXSource.volume = volume;
         FXSource.PlayOneShot(clip);
         FXSource.loop = looping;
     }

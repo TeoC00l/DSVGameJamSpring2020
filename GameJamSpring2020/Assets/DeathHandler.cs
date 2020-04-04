@@ -76,7 +76,7 @@ public class DeathHandler : MonoBehaviour
     public void die()
     {
         Debug.Log("Dying");
-        AudioManager.instance.PlayClip(deathClip, false);
+        AudioManager.instance.PlayClip(deathClip, false, 0.1f);
         gameObject.GetComponent<FirstPersonController>().enabled = false;
         gameObject.transform.Rotate(0f, 0f, 0f, Space.World);
         gameObject.transform.LookAt(davidsFace.transform.position);
@@ -86,8 +86,13 @@ public class DeathHandler : MonoBehaviour
 
     public void dieBullarEdition()
     {
+        Debug.Log("Death by bulle");
         olle.transform.position = behindPlayerPos.position;
-        AudioManager.instance.PlayClip(bullDeathClip, false);
-        die();
+        AudioManager.instance.PlayClip(bullDeathClip, false, 1f);
+        gameObject.GetComponent<FirstPersonController>().enabled = false;
+        gameObject.transform.Rotate(0f, 0f, 0f, Space.World);
+        gameObject.transform.LookAt(davidsFace.transform.position);
+        Time.timeScale = 0;
+        DeathScreen.SetActive(true);
     }
 }

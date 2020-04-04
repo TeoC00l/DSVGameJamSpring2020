@@ -30,13 +30,13 @@ public class FlashLight : MonoBehaviour
                 {
                     active = true;
                     flashLight.enabled = true;
-                    AudioManager.instance.PlayClip(turnOnAndOffSFX, false);
+                    AudioManager.instance.PlayClip(turnOnAndOffSFX, false, 0.1f);
                 }
                 else
                 {
                     active = false;
                     flashLight.enabled = false;
-                    AudioManager.instance.PlayClip(turnOnAndOffSFX, false);
+                    AudioManager.instance.PlayClip(turnOnAndOffSFX, false, 0.1f);
 
                 }
             }
@@ -51,7 +51,7 @@ public class FlashLight : MonoBehaviour
             {
                 active = false;
                 flashLight.enabled = false;
-                AudioManager.instance.PlayClip(noBatterySFX, false);
+                AudioManager.instance.PlayClip(noBatterySFX, false, 0.1f);
                 battery = 0;
                 Debug.Log("no battery");
 
