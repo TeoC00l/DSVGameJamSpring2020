@@ -106,21 +106,21 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.25
     agentHeight: 2
-    agentSlope: 45.2
-    agentClimb: 0.4
+    agentSlope: 34.8
+    agentClimb: 0.2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.083333336
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: eaad378210e192045939e831f1c212f1, type: 2}
 --- !u!1001 &40035246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,6 +132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bucket_A_snaps004 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611136368087112120, guid: 4e8b8a418bab6fc419243aa788679f15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3611136368087139736, guid: 4e8b8a418bab6fc419243aa788679f15,
         type: 3}
@@ -355,6 +360,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1 &78846441
@@ -507,6 +517,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table_A_snaps004 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7640213710846985892, guid: 27c49cb0d50bd3e44917c9404248bba6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7640213710847154820, guid: 27c49cb0d50bd3e44917c9404248bba6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -575,6 +590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table_A_snaps004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7640213710846985892, guid: 27c49cb0d50bd3e44917c9404248bba6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7640213710847154820, guid: 27c49cb0d50bd3e44917c9404248bba6,
         type: 3}
@@ -721,6 +741,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1001 &217303853
@@ -789,6 +814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bucket_B_snaps004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240244436426206072, guid: b1d48abb5da63414e965ed2e40222a8b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1d48abb5da63414e965ed2e40222a8b, type: 3}
@@ -957,6 +987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1 &500841893
@@ -1065,7 +1100,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &505576518
 Transform:
@@ -1097,6 +1132,7 @@ Transform:
   - {fileID: 45697987}
   - {fileID: 1005725014}
   - {fileID: 1381394546}
+  - {fileID: 3174084956162255889}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1302,6 +1338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table_A_snaps004 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7640213710846985892, guid: 27c49cb0d50bd3e44917c9404248bba6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7640213710847154820, guid: 27c49cb0d50bd3e44917c9404248bba6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1426,6 +1467,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1001 &691927241
@@ -1439,6 +1485,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bed_A_snaps004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206381184014662440, guid: 0c0488edbd304f846bcf082daae4a714,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5206381184015083272, guid: 0c0488edbd304f846bcf082daae4a714,
         type: 3}
@@ -1705,6 +1756,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair_A_snaps004
       objectReference: {fileID: 0}
+    - target: {fileID: 1510007914706914912, guid: 1cf98b7b236e7ad418b5ad0a3323e12c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1510007914707145280, guid: 1cf98b7b236e7ad418b5ad0a3323e12c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1776,7 +1832,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1005725014
 Transform:
@@ -1991,6 +2047,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!4 &1126492505 stripped
@@ -2022,6 +2083,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bucket_C_snaps004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887479860497143469, guid: 3fc718377975ffc4e9fc63a9fce514ec,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5887479860497304205, guid: 3fc718377975ffc4e9fc63a9fce514ec,
         type: 3}
@@ -2387,6 +2453,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bucket_Lid_A_snaps004
       objectReference: {fileID: 0}
+    - target: {fileID: 8049218858651594223, guid: 1e41723d55b9a3c488a2cdd608ea8891,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e41723d55b9a3c488a2cdd608ea8891, type: 3}
 --- !u!1001 &1350638130
@@ -2456,6 +2527,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_A_snaps004 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1344546142117818843, guid: e1da7d7efada2cb4eb6a3fc13a6c3836,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1da7d7efada2cb4eb6a3fc13a6c3836, type: 3}
 --- !u!1 &1381394545
@@ -2472,7 +2548,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1381394546
 Transform:
@@ -2651,6 +2727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1001 &1443897281
@@ -2664,6 +2745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bucket_A_snaps004
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611136368087112120, guid: 4e8b8a418bab6fc419243aa788679f15,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3611136368087139736, guid: 4e8b8a418bab6fc419243aa788679f15,
         type: 3}
@@ -2873,6 +2959,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NodModified
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 3e15ce4514f0fca4fb5977ed3ebba6fd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e15ce4514f0fca4fb5977ed3ebba6fd, type: 3}
 --- !u!4 &1500492778 stripped
@@ -3039,6 +3130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
@@ -3221,6 +3317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1001 &1713001153
@@ -3289,6 +3390,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rubbish_Bag_A_snaps004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344546142117818843, guid: e1da7d7efada2cb4eb6a3fc13a6c3836,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1da7d7efada2cb4eb6a3fc13a6c3836, type: 3}
@@ -3497,6 +3603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
 --- !u!1001 &1812601689
@@ -3565,6 +3676,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rubbish_Bag_A_snaps004 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344546142117818843, guid: e1da7d7efada2cb4eb6a3fc13a6c3836,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1da7d7efada2cb4eb6a3fc13a6c3836, type: 3}
@@ -3640,6 +3756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rubbish_Bag_B_snaps004 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558223643320907841, guid: f0c730c93374395448abc5bb63deb598,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c730c93374395448abc5bb63deb598, type: 3}
@@ -4014,6 +4135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_A_snaps004
       objectReference: {fileID: 0}
+    - target: {fileID: 3508505766442857153, guid: 9a106b553af516f46af7a94c61152786,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a106b553af516f46af7a94c61152786, type: 3}
 --- !u!1 &1990871767
@@ -4348,6 +4474,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Radio_A_snaps004
       objectReference: {fileID: 0}
+    - target: {fileID: 6905233799559130424, guid: 721b20cf28a58a54792c92601d4fcc95,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 721b20cf28a58a54792c92601d4fcc95, type: 3}
 --- !u!1001 &3174084956162255888
@@ -4355,7 +4486,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 505576518}
     m_Modifications:
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
@@ -4375,17 +4506,17 @@ PrefabInstance:
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
@@ -4395,7 +4526,7 @@ PrefabInstance:
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
         type: 3}
@@ -4417,8 +4548,49 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tvs
       objectReference: {fileID: 0}
+    - target: {fileID: 3174084954674347519, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348231408926124532, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348231409224402141, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348231409229079812, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348231410016201020, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348231410477416774, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348231410819361608, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46c02a64ab28eca4aac0a7da03f36bcf, type: 3}
+--- !u!4 &3174084956162255889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3174084954674347488, guid: 46c02a64ab28eca4aac0a7da03f36bcf,
+    type: 3}
+  m_PrefabInstance: {fileID: 3174084956162255888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5414824358232162440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4469,7 +4641,7 @@ PrefabInstance:
     - target: {fileID: 4846922900703971258, guid: 782e188a31bdedb47abdb5ea7b4e6241,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4846922900703971258, guid: 782e188a31bdedb47abdb5ea7b4e6241,
         type: 3}
@@ -4484,6 +4656,11 @@ PrefabInstance:
     - target: {fileID: 4846922900703971258, guid: 782e188a31bdedb47abdb5ea7b4e6241,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5734419438716227999, guid: 782e188a31bdedb47abdb5ea7b4e6241,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
