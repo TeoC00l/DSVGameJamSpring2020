@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     public GameObject WinScreen;
     public GameObject DeathScreen;
     public GameObject InGameUI;
+    public Slider BatterySlider;
 
     public static Inventory instance;
 
@@ -47,5 +48,10 @@ public class Inventory : MonoBehaviour
     {
         InGameUI.SetActive(false);
         DeathScreen.SetActive(true);
+    }
+
+    public void UpdateBatterySlider(float value)
+    {
+        BatterySlider.value = value;
     }
 }

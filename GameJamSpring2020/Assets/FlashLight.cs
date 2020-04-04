@@ -61,6 +61,6 @@ public class FlashLight : MonoBehaviour
             Debug.Log("battery" + battery);
 
         }
-
+        Inventory.instance.UpdateBatterySlider(battery);
     }
 }
