@@ -5,6 +5,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class DeathHandler : MonoBehaviour
 {
+    public GameObject davidsFace;
     GameObject DeathScreen;
     private int fearCounter;
     private int fearThreshold = 1000;
@@ -25,6 +26,7 @@ public class DeathHandler : MonoBehaviour
 
     private void Start()
     {
+        davidsFace = GameObject.Find("Face");
         olle = GameObject.Find("Olle 1");
     }
 
@@ -72,7 +74,8 @@ public class DeathHandler : MonoBehaviour
         Debug.Log("Dying");
         AudioManager.instance.PlayClip(deathClip, false);
         gameObject.GetComponent<FirstPersonController>().enabled = false;
-        gameObject.transform.LookAt(olle.transform.position);
+        gameObject.transform.Rotate(0f, 0f, 0f, Space.World);
+        gameObject.transform.LookAt(davidsFace.transform.position);
         Time.timeScale = 0;
         DeathScreen.SetActive(true);
     }
