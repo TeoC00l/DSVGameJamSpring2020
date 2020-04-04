@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     private static int noOfCollectibles = 8;
     public int CollectedRolls = 0;
+    public Text TotalRollsText;
+    public Text CurrentRollsText;
 
     public static Inventory instance;
 
@@ -13,6 +16,8 @@ public class Inventory : MonoBehaviour
     void Start()
     {
         instance = this;
+        TotalRollsText.text = "/ " + noOfCollectibles;
+        CurrentRollsText.text = CollectedRolls.ToString();
     }
 
     // Update is called once per frame
@@ -22,5 +27,10 @@ public class Inventory : MonoBehaviour
         {
             //do win condition
         }
+    }
+
+    public void UpdateRolls()
+    {
+        CurrentRollsText.text = CollectedRolls.ToString();
     }
 }
