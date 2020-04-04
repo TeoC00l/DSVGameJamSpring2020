@@ -10,7 +10,7 @@ public class DeathHandler : MonoBehaviour
     
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         DeathScreen = GameObject.Find("DeathScreen");
         DeathScreen.SetActive(false);
@@ -42,6 +42,8 @@ public class DeathHandler : MonoBehaviour
 
     public void die()
     {
+        Time.timeScale = 0;
         DeathScreen.SetActive(true);
+        //gameObject.transform.LookAt(gameObject.GetComponent<Vision>().enemyDirection);
     }
 }
