@@ -36,9 +36,25 @@ public class DeathHandler : MonoBehaviour
         
     }
 
-    public void scare()
+    public void scare(float distance)
     {
-        fearCounter+=10;
+            if (distance > 40f)
+            {
+                fearCounter += 1;
+            }
+            else if (distance > 30f)
+            {
+                fearCounter += 2;
+            }
+            else if (distance > 20f)
+            {
+                fearCounter += 4;
+            }
+            else
+            {
+                fearCounter += 10;
+            }
+
     }
 
     public void calm()

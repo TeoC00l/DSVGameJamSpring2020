@@ -5,7 +5,7 @@ using UnityEngine;
 public class Vision : MonoBehaviour
 {
     DeathHandler deathHandler;
-    private bool seeingOlle;
+    public bool seeingOlle;
     [SerializeField]private Olle olle;
     public LayerMask visionMask;
     CanvasGroup staticEffect;
@@ -54,7 +54,7 @@ public class Vision : MonoBehaviour
 
             staticEffect.alpha = 0.05f;
             Debug.Log("Scare!");
-            deathHandler.scare();
+            deathHandler.scare(distance);
         }
         else
         {
