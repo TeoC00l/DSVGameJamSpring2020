@@ -33,6 +33,25 @@ public class Vision : MonoBehaviour
 
 
         if (seeingOlle){
+            float distance = Vector3.Distance(gameObject.transform.position, olle.transform.position);
+
+            if(distance > 40f)
+            {
+                staticEffect.alpha = 0.005f;
+            }else if (distance > 30f)
+            {
+                staticEffect.alpha = 0.01f;
+            }
+             else if (distance > 20f)
+            {
+            staticEffect.alpha = 0.025f;
+            }
+            else
+            {
+                staticEffect.alpha = 0.05f;
+            }
+
+
             staticEffect.alpha = 0.05f;
             Debug.Log("Scare!");
             deathHandler.scare();
