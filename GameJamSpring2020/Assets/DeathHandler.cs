@@ -9,9 +9,11 @@ public class DeathHandler : MonoBehaviour
     private int fearCounter;
     private int fearThreshold = 1000;
     GameObject olle;
+    public AudioClip deathClip;
     public AudioClip bullDeathClip;
     public Transform behindPlayerPos;
-    
+
+    private bool isDying = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -29,8 +31,9 @@ public class DeathHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (fearCounter > fearThreshold)
+        if (fearCounter > fearThreshold && !isDying)
         {
+            isDying = true;
             die();
         }
         
@@ -67,6 +70,8 @@ public class DeathHandler : MonoBehaviour
 
     public void die()
     {
+        Debug.Log("Dying");
+        AudioManager.instance.PlayClip(deathClip, false);
         gameObject.GetComponent<FirstPersonController>().enabled = false;
         gameObject.transform.LookAt(olle.transform.position);
         Time.timeScale = 0;

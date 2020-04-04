@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioClip PickupClip;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager.instance.PlayClip(PickupClip, false);
             Inventory.instance.CollectedRolls++;
             Inventory.instance.UpdateRolls();
             Destroy(gameObject);

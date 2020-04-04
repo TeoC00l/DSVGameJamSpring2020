@@ -137,6 +137,10 @@ PrefabInstance:
       propertyPath: behindPlayerPos
       value: 
       objectReference: {fileID: 196203221102935755}
+    - target: {fileID: 2080451179, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 475ebf6a0b9d67c4c8c759e8e9d8e261, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!4 &8646876304000338595 stripped
