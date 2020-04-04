@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b373e5d54e428845b26772d9517dd9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PickupClip: {fileID: 8300000, guid: 98066c978db648042b7cdc17273c129a, type: 3}
 --- !u!65 &121952376476293473
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135,6 +136,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.62349313
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: d24849b0b107aba4d902ee69e69986e4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f56bf29e48d7c642b0c072f46b100e6, type: 2}
     - target: {fileID: -927199367670048503, guid: d24849b0b107aba4d902ee69e69986e4,
         type: 3}
       propertyPath: m_Name

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {
-    [SerializeField] private AudioClip sound;
+    [SerializeField] private AudioClip turnOnAndOffSFX;
+    [SerializeField] private AudioClip noBatterySFX;
     public float battery = 100;
     private Light flashLight;
     private bool active = false;
@@ -29,13 +30,13 @@ public class FlashLight : MonoBehaviour
                 {
                     active = true;
                     flashLight.enabled = true;
-                    AudioManager.instance.PlayClip(sound, false);
+                    AudioManager.instance.PlayClip(turnOnAndOffSFX, false);
                 }
                 else
                 {
                     active = false;
                     flashLight.enabled = false;
-                    AudioManager.instance.PlayClip(sound, false);
+                    AudioManager.instance.PlayClip(turnOnAndOffSFX, false);
 
                 }
             }
@@ -50,6 +51,7 @@ public class FlashLight : MonoBehaviour
             {
                 active = false;
                 flashLight.enabled = false;
+                AudioManager.instance.PlayClip(noBatterySFX, false);
                 battery = 0;
                 Debug.Log("no battery");
 
