@@ -9,6 +9,8 @@ public class DeathHandler : MonoBehaviour
     private int fearCounter;
     private int fearThreshold = 1000;
     GameObject olle;
+    public AudioClip bullDeathClip;
+    public Transform behindPlayerPos;
     
 
     // Start is called before the first frame update
@@ -53,5 +55,12 @@ public class DeathHandler : MonoBehaviour
         gameObject.transform.LookAt(olle.transform.position);
         Time.timeScale = 0;
         DeathScreen.SetActive(true);
+    }
+
+    public void dieBullarEdition()
+    {
+        olle.transform.position = behindPlayerPos.position;
+        AudioManager.instance.PlayClip(bullDeathClip, false);
+        die();
     }
 }
