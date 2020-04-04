@@ -61,7 +61,7 @@ public class Vision : MonoBehaviour
         }
         else
         {
-            staticEffect.alpha = 0.5f;
+            staticEffect.alpha = 0.05f;
         }
 
 
