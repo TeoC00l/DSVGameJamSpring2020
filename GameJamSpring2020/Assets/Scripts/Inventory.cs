@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Inventory : MonoBehaviour
     public GameObject DeathScreen;
     public GameObject InGameUI;
     public Slider BatterySlider;
+    public GameObject NotePaper;
 
     public static Inventory instance;
 
@@ -30,6 +32,21 @@ public class Inventory : MonoBehaviour
         if(CollectedRolls >= noOfCollectibles)
         {
             DoWin();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if(NotePaper.activeSelf == false)
+            {
+                NotePaper.SetActive(true);
+            } else if (NotePaper.activeSelf == true)
+            {
+                NotePaper.SetActive(false);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
