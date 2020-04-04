@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class DeathHandler : MonoBehaviour
 {
     GameObject DeathScreen;
     private int fearCounter;
     private int fearThreshold = 1000;
+    GameObject olle;
     
 
     // Start is called before the first frame update
@@ -15,6 +17,11 @@ public class DeathHandler : MonoBehaviour
         DeathScreen = GameObject.Find("DeathScreen");
         DeathScreen.SetActive(false);
         fearCounter = 0;
+    }
+
+    private void Start()
+    {
+        olle = GameObject.Find("Olle 1");
     }
 
     // Update is called once per frame
@@ -42,8 +49,9 @@ public class DeathHandler : MonoBehaviour
 
     public void die()
     {
+        gameObject.GetComponent<FirstPersonController>().enabled = false;
+        gameObject.transform.LookAt(olle.transform.position);
         Time.timeScale = 0;
         DeathScreen.SetActive(true);
-        //gameObject.transform.LookAt(gameObject.GetComponent<Vision>().enemyDirection);
     }
 }
