@@ -9,6 +9,9 @@ public class Inventory : MonoBehaviour
     public int CollectedRolls = 0;
     public Text TotalRollsText;
     public Text CurrentRollsText;
+    public GameObject WinScreen;
+    public GameObject DeathScreen;
+    public GameObject InGameUI;
 
     public static Inventory instance;
 
@@ -25,12 +28,24 @@ public class Inventory : MonoBehaviour
     {
         if(CollectedRolls >= noOfCollectibles)
         {
-            //do win condition
+            DoWin();
         }
     }
 
     public void UpdateRolls()
     {
         CurrentRollsText.text = CollectedRolls.ToString();
+    }
+
+    public void DoWin()
+    {
+        InGameUI.SetActive(false);
+        WinScreen.SetActive(true);
+    }
+
+    public void DoDeath()
+    {
+        InGameUI.SetActive(false);
+        DeathScreen.SetActive(true);
     }
 }
