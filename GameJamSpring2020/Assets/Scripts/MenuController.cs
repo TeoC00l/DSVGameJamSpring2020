@@ -5,16 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject MenuContent;
+    public GameObject Controls;
 
-    // Update is called once per frame
-    void Update()
+    public void ShowControls()
     {
-        
+        if(Controls.activeSelf == true)
+        {
+            MenuContent.SetActive(true);
+            Controls.SetActive(false);
+        } else if(Controls.activeSelf == false)
+        {
+            MenuContent.SetActive(false);
+            Controls.SetActive(true);
+        }
     }
 
     public void LoadScene(string sceneToLoad)
