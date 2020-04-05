@@ -15,7 +15,7 @@ public class Collectible : MonoBehaviour
             Debug.Log("Picking up toilet roll");
             AudioManager.instance.PlayClip(PickupClip, false, 0.1f);
             Inventory.instance.CollectedRolls++;
-            Inventory.instance.UpdateRolls();
+            Inventory.instance.UpdateRolls(gameObject.name);
             Destroy(gameObject);
         }
     }
