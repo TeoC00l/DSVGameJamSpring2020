@@ -44,7 +44,11 @@ public class Olle : MonoBehaviour
     {
         float distance = Vector3.Distance(gameObject.transform.position, player.transform.position);
 
-        if (distance > 20f)
+          if(distance > 60f)
+        {
+            navMeshAgent.speed = 7.5f;
+        }
+        else if (distance > 20f)
         {
             navMeshAgent.speed = 2f;
         }

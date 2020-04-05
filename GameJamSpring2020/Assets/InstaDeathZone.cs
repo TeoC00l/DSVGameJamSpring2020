@@ -5,11 +5,13 @@ using UnityEngine;
 public class InstaDeathZone : MonoBehaviour
 {
     DeathHandler deathHandler;
+    Vision vision;
 
     // Start is called before the first frame update
     void Start()
     {
         deathHandler = GameObject.FindObjectOfType<DeathHandler>();
+        vision = FindObjectOfType<Vision>();
     }
 
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class InstaDeathZone : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && vision.ScanForOlle())
         {
             deathHandler.die();
         }

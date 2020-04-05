@@ -129,7 +129,7 @@ public class Vision : MonoBehaviour
         return seeingOlle;
     }
 
-    private bool ScanForOlle()
+    public bool ScanForOlle()
     {
         RaycastHit hit;
 
