@@ -14,11 +14,7 @@ public class InstaDeathZone : MonoBehaviour
         vision = FindObjectOfType<Vision>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     private void OnTriggerStay(Collider other)
     {
