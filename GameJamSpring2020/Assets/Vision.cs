@@ -32,7 +32,7 @@ public class Vision : MonoBehaviour
         }
 
         float distance = Vector3.Distance(gameObject.transform.parent.transform.position, olle.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         if (distance > 40f)
         {

@@ -428,6 +428,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 0}
   player: {fileID: 0}
+  StartPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &2756776998467935898
 AudioSource:
   m_ObjectHideFlags: 0

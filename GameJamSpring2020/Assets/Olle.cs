@@ -7,13 +7,16 @@ public class Olle : MonoBehaviour
     [HideInInspector] public UnityEngine.AI.NavMeshAgent navMeshAgent;
     public GameObject player;
     private bool pursuing;
-
+    public Transform[] StartPositions;
 
     // Start is called before the first frame update
     void Start()
     {
         pursuing = true;
         navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        Vector3 startPos = StartPositions[Random.Range(0, StartPositions.Length - 1)].position;
+        navMeshAgent.Warp(startPos);
+        Debug.Log("David starting from: " + startPos);
     }
 
     // Update is called once per frame
