@@ -66,7 +66,6 @@ public class Inventory : MonoBehaviour
         {
             DoWin();
         }
-
     }
 
     public void UpdateRolls(string pickedRollName)
