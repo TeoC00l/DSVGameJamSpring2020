@@ -101,6 +101,7 @@ public class Inventory : MonoBehaviour
 
     public void DoWin()
     {
+        Time.timeScale = 0.1f;
         InGameUI.SetActive(false);
         WinScreen.SetActive(true);
     }
