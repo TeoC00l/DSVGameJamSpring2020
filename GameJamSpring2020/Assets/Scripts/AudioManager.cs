@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this);
         }
+        StaticSource.Stop();
     }
 
 

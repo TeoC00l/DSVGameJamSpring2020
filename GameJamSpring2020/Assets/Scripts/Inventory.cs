@@ -18,6 +18,11 @@ public class Inventory : MonoBehaviour
 
     public static Inventory instance;
 
+    private void OnEnable()
+    {
+        Time.timeScale = 30;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +53,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("MainMenu");
+            AudioManager.instance.StaticSource.Stop();
+        }
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            SceneManager.LoadScene("SampleScene");
             AudioManager.instance.StaticSource.Stop();
         }
     }

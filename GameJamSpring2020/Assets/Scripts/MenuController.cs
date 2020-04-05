@@ -8,6 +8,12 @@ public class MenuController : MonoBehaviour
     public GameObject MenuContent;
     public GameObject Controls;
 
+    private void OnEnable()
+    {
+        Time.timeScale = 30;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
     public void ShowControls()
     {
         if(Controls.activeSelf == true)

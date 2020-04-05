@@ -1402,7 +1402,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.07
-  m_Text: "Korridor mot Caf\xE9t"
+  m_Text: "Toaletter vid Entr\xE9n"
 --- !u!1 &8964286439770555035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,7 +1468,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2073408d0c4444649857f6ded2fcfb67, type: 3}
-    m_FontSize: 28
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1479,7 +1479,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.07
-  m_Text: "Korridor utanf\xF6r lilla h\xF6rsalen"
+  m_Text: "Utanf\xF6r grupprummen bortom spellabbet"
 --- !u!1 &9045792522206739804
 GameObject:
   m_ObjectHideFlags: 0
