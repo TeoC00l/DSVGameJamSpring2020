@@ -10,11 +10,14 @@ public class Vision : MonoBehaviour
     public LayerMask visionMask;
     CanvasGroup staticEffect;
     public Vector3 enemyDirection;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
+    int olleTimer;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        olleTimer = 0;
 
         staticEffect = GameObject.Find("StaticEffect").GetComponent<CanvasGroup>();
 
@@ -24,6 +27,11 @@ public class Vision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (olleTimer > 0)
+        {
+            olleTimer--;
+        }
+
         PlayStaticSound();
 
         if (deathHandler == null)
@@ -32,7 +40,6 @@ public class Vision : MonoBehaviour
         }
 
         float distance = Vector3.Distance(gameObject.transform.parent.transform.position, olle.transform.position);
-        //Debug.Log(distance);
 
         if (distance > 40f)
         {
@@ -68,6 +75,12 @@ public class Vision : MonoBehaviour
 
         if (seeingOlle)
         {
+            if(olleTimer == 0)
+            {
+                audioSource.PlayOneShot(audioClip, 1f);
+                olleTimer = 3000;
+            }
+
             deathHandler.scare(distance);
 
             if (distance > 40f)

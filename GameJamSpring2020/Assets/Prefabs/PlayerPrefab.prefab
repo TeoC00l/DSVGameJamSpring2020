@@ -133,6 +133,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 50.554214
       objectReference: {fileID: 0}
+    - target: {fileID: 1416473144, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1c64c8c84760ea341bd86444c28f208e, type: 3}
     - target: {fileID: 2080451179, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: behindPlayerPos
       value: 
