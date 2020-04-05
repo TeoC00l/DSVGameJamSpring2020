@@ -16,9 +16,11 @@ public class Inventory : MonoBehaviour
     public Slider BatterySlider;
     public GameObject NotePaper;
     public GameObject[] Lines;
+    public GameObject TutorialText;
 
     public static Inventory instance;
 
+    private float tutorialCountdown = 1000f;
 
     private void OnEnable()
     {
@@ -37,6 +39,15 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(TutorialText.activeSelf == true)
+        {
+            tutorialCountdown--;
+        }
+        if(tutorialCountdown <= 0)
+        {
+            TutorialText.SetActive(false);
+        }
+
         if(CollectedRolls >= noOfCollectibles)
         {
             DoWin();
