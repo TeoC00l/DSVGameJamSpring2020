@@ -75,6 +75,10 @@ public class DeathHandler : MonoBehaviour
 
     public void die()
     {
+        if (isDying)
+        {
+            return;
+        }
         Debug.Log("Dying");
         AudioManager.instance.PlayClip(deathClip, false, 0.1f);
         gameObject.GetComponent<FirstPersonController>().enabled = false;

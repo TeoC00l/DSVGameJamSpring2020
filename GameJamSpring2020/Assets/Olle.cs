@@ -8,6 +8,9 @@ public class Olle : MonoBehaviour
     public GameObject player;
     private bool pursuing;
     public Transform[] StartPositions;
+    public AudioClip KommerOchTarDig;
+    private float coolDown;
+    public Animator AnimatorController;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +29,12 @@ public class Olle : MonoBehaviour
         {
             navMeshAgent.isStopped = false;
             navMeshAgent.SetDestination(player.transform.position);
+            AnimatorController.SetBool("isRunning", true);
         }
         else
         {
             navMeshAgent.isStopped = true;
+            AnimatorController.SetBool("isRunning", false);
         }
 
     }
@@ -49,11 +54,20 @@ public class Olle : MonoBehaviour
         else if (distance > 5f)
         {
             navMeshAgent.speed = 3f;
+            if (coolDown <= 0)
+            {
+                AudioManager.instance.PlayClip(KommerOchTarDig, false, 0.6f);
+                coolDown = 300f;
+            }
         }
         else if (distance > 2f)
         {
             navMeshAgent.speed = 8f;
+        }
 
+        if(coolDown > 0)
+        {
+            coolDown--;
         }
 
         if (player.GetComponentInChildren<Vision>().isSeeingOlle())

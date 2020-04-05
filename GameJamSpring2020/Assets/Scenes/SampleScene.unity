@@ -14720,6 +14720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: david idle
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 6c2ee214930b39542ae7930da150e76e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c2ee214930b39542ae7930da150e76e, type: 3}
 --- !u!1 &1173819705
@@ -17370,6 +17375,16 @@ PrefabInstance:
       propertyPath: StartPositions.Array.data[5]
       value: 
       objectReference: {fileID: 2007561970}
+    - target: {fileID: 3486380745065188615, guid: 29babba5922d1854c946e67a3e2e8b69,
+        type: 3}
+      propertyPath: KommerOchTarDig
+      value: 
+      objectReference: {fileID: 8300000, guid: e525109e53ab153429ad1d5a44c93bb4, type: 3}
+    - target: {fileID: 3486380745065188615, guid: 29babba5922d1854c946e67a3e2e8b69,
+        type: 3}
+      propertyPath: AnimatorController
+      value: 
+      objectReference: {fileID: 1417618839}
     - target: {fileID: 3486380745065188632, guid: 29babba5922d1854c946e67a3e2e8b69,
         type: 3}
       propertyPath: m_Speed
@@ -17478,6 +17493,31 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1417618836}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1417618838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8296172669480462575, guid: 29babba5922d1854c946e67a3e2e8b69,
+    type: 3}
+  m_PrefabInstance: {fileID: 1417618836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1417618839
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417618838}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bbbb4f1538082be429dd3842e0388546, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1422163455
 GameObject:
   m_ObjectHideFlags: 0
