@@ -10,6 +10,7 @@ public class MenuController : MonoBehaviour
     public GameObject Controls;
     public GameObject VideoScreen;
     public VideoPlayer VideoPlayer;
+    public GameObject Canvas;
 
     private bool startedPlaying = false;
     private bool played = false;
@@ -47,8 +48,8 @@ public class MenuController : MonoBehaviour
 
     public void StartVideo()
     {
+        Canvas.SetActive(false);
         VideoScreen.SetActive(true);
-        VideoPlayer.Play();
         startedPlaying = true;
     }
 
