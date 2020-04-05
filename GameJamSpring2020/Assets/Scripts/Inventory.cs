@@ -62,6 +62,11 @@ public class Inventory : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
             AudioManager.instance.StaticSource.Stop();
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            DoWin();
+        }
+
     }
 
     public void UpdateRolls(string pickedRollName)
@@ -99,11 +104,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void OnGUI()
-    {
-        if (GUI.Button(new Rect(10, 70, 50, 30), "Win"))
-            DoWin();
-    }
 
     public void DoWin()
     {
