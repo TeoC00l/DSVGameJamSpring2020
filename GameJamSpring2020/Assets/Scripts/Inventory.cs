@@ -62,10 +62,6 @@ public class Inventory : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
             AudioManager.instance.StaticSource.Stop();
         }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            DoWin();
-        }
     }
 
     public void UpdateRolls(string pickedRollName)

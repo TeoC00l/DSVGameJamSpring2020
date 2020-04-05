@@ -62,7 +62,7 @@ public class Olle : MonoBehaviour
             if (coolDown <= 0)
             {
                 Source.PlayOneShot(KommerOchTarDig);
-                coolDown = 300f;
+                coolDown = 10000f;
             }
         }
         else if (distance > 2f)
