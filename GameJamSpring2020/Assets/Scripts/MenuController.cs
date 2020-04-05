@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour
 
     private void OnEnable()
     {
-        Time.timeScale = 30;
+        Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.Confined;
     }
 

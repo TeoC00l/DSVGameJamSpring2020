@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
 
     private void OnEnable()
     {
-        Time.timeScale = 30;
+        Time.timeScale = 1;
     }
 
     // Start is called before the first frame update
