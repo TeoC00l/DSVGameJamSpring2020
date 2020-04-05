@@ -35,8 +35,8 @@ public class DeathHandler : MonoBehaviour
     {
         if (fearCounter > fearThreshold && !isDying)
         {
-            isDying = true;
             die();
+            isDying = true;
         }
         
     }

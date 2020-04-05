@@ -11,6 +11,7 @@ public class Olle : MonoBehaviour
     public AudioClip KommerOchTarDig;
     private float coolDown;
     public Animator AnimatorController;
+    public AudioSource Source;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +57,7 @@ public class Olle : MonoBehaviour
             navMeshAgent.speed = 3f;
             if (coolDown <= 0)
             {
-                AudioManager.instance.PlayClip(KommerOchTarDig, false, 0.6f);
+                Source.PlayOneShot(KommerOchTarDig);
                 coolDown = 300f;
             }
         }
