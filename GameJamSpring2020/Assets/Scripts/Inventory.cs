@@ -15,8 +15,10 @@ public class Inventory : MonoBehaviour
     public GameObject InGameUI;
     public Slider BatterySlider;
     public GameObject NotePaper;
+    public GameObject[] Lines;
 
     public static Inventory instance;
+
 
     private void OnEnable()
     {
@@ -62,9 +64,39 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void UpdateRolls()
+    public void UpdateRolls(string pickedRollName)
     {
         CurrentRollsText.text = CollectedRolls.ToString();
+        switch (pickedRollName)
+        {
+            case "ToarulleKorridorLH":
+                Lines[7].SetActive(true);
+                break;
+            case "ToarulleLH":
+                Lines[1].SetActive(true);
+                break;
+            case "ToarulleSL":
+                Lines[0].SetActive(true);
+                break;
+            case "ToarulleCafe":
+                Lines[2].SetActive(true);
+                break;
+            case "ToarulleEntre":
+                Lines[4].SetActive(true);
+                break;
+            case "ToarulleBortomSL":
+                Lines[5].SetActive(true);
+                break;
+            case "ToarulleEntreToa":
+                Lines[6].SetActive(true);
+                break;
+            case "ToarulleFooBar":
+                Lines[3].SetActive(true);
+                break;
+            default:
+                break;
+
+        }
     }
 
     public void DoWin()
