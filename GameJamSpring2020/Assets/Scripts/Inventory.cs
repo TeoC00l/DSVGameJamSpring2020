@@ -99,8 +99,15 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void OnGUI()
+    {
+        if (GUI.Button(new Rect(10, 70, 50, 30), "Win"))
+            DoWin();
+    }
+
     public void DoWin()
     {
+        Time.timeScale = 0.1f;
         InGameUI.SetActive(false);
         WinScreen.SetActive(true);
     }
